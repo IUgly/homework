@@ -39,6 +39,7 @@ status GetElemP_Dul(DuLinkList L, int i, DuLNode &ptr){
     if (!p||j>i||i<0)return false;
     ptr.prior=p->prior;
     ptr.next=p->next;
+    return true;
 }
 
 //将单链表置逆
