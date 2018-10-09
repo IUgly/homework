@@ -50,7 +50,7 @@ status ReverseList_L(LinkList &L){
     cur=next=NULL;
     while (pre){
         next = cur->next;//逆置结点前，先保存下一节点
-        cur->next = pre;
+        cur->next = pre;//逆置
         pre = cur;
         cur = next;
     }
